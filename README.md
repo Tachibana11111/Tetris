@@ -1,6 +1,7 @@
 # Game Xếp Hình (Tetris)
 
 Đây là một phiên bản đơn giản của trò chơi xếp hình Tetris, được phát triển bằng HTML, CSS và JavaScript. Trò chơi cho phép người chơi di chuyển và xoay các khối hình để tạo thành các hàng đầy đủ để ghi điểm.
+Chơi tại dây: tachibana11111.github.io/Tetris
 
 ## Hướng dẫn chơi
 
