@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Xếp Hình</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="overlay" id="startOverlay">
+      <div class="start-container">
+        <input type="text" id="playerName" placeholder="Nhập tên của bạn" />
+
+        <div class="instructions">
+          <h3>Hướng dẫn chơi</h3>
+          <p>Sử dụng các phím mũi tên để di chuyển các mảnh ghép:</p>
+          <ul>
+            <li>⇦ : Di chuyển sang trái</li>
+            <li>⇨ : Di chuyển sang phải</li>
+            <li>⇩ : Tăng tốc độ rơi</li>
+            <li>⇧ : Xoay mảnh ghép</li>
+          </ul>
+        </div>
+        <button id="startButton">Bắt đầu</button>
+      </div>
+    </div>
+    <div class="game-container">
+      <canvas id="gameCanvas" width="300" height="600"></canvas>
+      <div class="score">
+        <h2>Điểm: <span id="score">0</span></h2>
+      </div>
+    </div>
+    <div id="gameOverOverlay" class="overlay hidden">
+      <h2>Kết Thúc</h2>
+      <p id="gameOverScore">Điểm:</p>
+      <p id="playerNameDisplay">Người chơi:</p>
+      <div class="buttons">
+        <button id="playAgainButton">Chơi Lại</button>
+        <button id="quitButton">Thoát</button>
+      </div>
+    </div>
+    <!-- <footer>
+      Made by Nhữ Hào Nam, Nguyễn Tiến Đạt, Lê Thành Đạt và Võ Hoàng Hiệp
+    </footer> -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
