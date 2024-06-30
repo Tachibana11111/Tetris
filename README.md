@@ -12,7 +12,7 @@ Chơi tại dây: tachibana11111.github.io/Tetris
 - **Mũi tên lên**: Xoay khối hình.
 
 ### Mục tiêu
-- Xếp các khối hình sao cho các hàng ngang đầy đủ sẽ biến mất và ghi điểm.
+- Xếp các khối hình sao cho đầy đủ một hàng và sẽ được ghi điểm.
 
 ## Hình ảnh minh họa
 <img width="272" alt="SO" src="https://github.com/Tachibana11111/Tetris/assets/118669951/cc40e3b1-4c46-48a2-9875-874cb3315fbd">
