@@ -1,7 +1,8 @@
 # Game Xếp Hình (Tetris)
 
 Đây là một phiên bản đơn giản của trò chơi xếp hình Tetris, được phát triển bằng HTML, CSS và JavaScript. Trò chơi cho phép người chơi di chuyển và xoay các khối hình để tạo thành các hàng đầy đủ để ghi điểm.
-Chơi tại dây: tachibana11111.github.io/Tetris
+
+- Chơi tại đây: tachibana11111.github.io/Tetris
 
 ## Hướng dẫn chơi
 
@@ -15,12 +16,13 @@ Chơi tại dây: tachibana11111.github.io/Tetris
 - Xếp các khối hình sao cho đầy đủ một hàng và sẽ được ghi điểm.
 
 ## Hình ảnh minh họa
+- Màn hình bắt đầu
 <img width="272" alt="SO" src="https://github.com/Tachibana11111/Tetris/assets/118669951/cc40e3b1-4c46-48a2-9875-874cb3315fbd">
 
-
+- Giao diện trong trò chơi
 <img width="274" alt="IO" src="https://github.com/Tachibana11111/Tetris/assets/118669951/ee859006-1f7d-44a4-add2-ccd6a0766d57">
 
-
+- Màn hình khi kết thúc trò chơi
 <img width="286" alt="EO" src="https://github.com/Tachibana11111/Tetris/assets/118669951/ae1557c7-a854-4fe1-9291-6e0f1d9cd8b6">
 
 ## Các tính năng chính
@@ -38,9 +40,7 @@ Chơi tại dây: tachibana11111.github.io/Tetris
 ## Tác giả
 
 - Nhữ Hào Nam
-- Nguyễn Tiến Đạt
-- Lê Thành Đạt
-- Võ Hoàng Hiệp
+
 
 ## License
 
