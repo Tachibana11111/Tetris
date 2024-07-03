@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         let dropCounter = 0;
-        let dropInterval = 1000;
+        let dropInterval = 750;
         let lastTime = 0;
 
         function update(time = 0) {
