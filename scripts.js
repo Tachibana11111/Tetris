@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let currentLanguage = "en";
 
+        gameOverOverlay.style.display = "none";
+
         const nameAlertMessage = {
           vi: "Vui lòng nhập tên người chơi.",
           en: "Please enter your name.",
@@ -290,6 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           startOverlay.style.display = "none";
+          gameOverOverlay.style.display = "none";
           playerReset();
           updateScore();
           gameRunning = true;
