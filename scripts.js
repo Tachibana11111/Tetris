@@ -428,38 +428,14 @@ document.addEventListener("DOMContentLoaded", () => {
             strings.playerNameDisplay +
             " " +
             playerName; // Updated
-            disableArrowKeys();
+            
         }
 
         function hideGameOverOverlay() {
           gameOverOverlay.style.display = "none";
-          gameOverScore.innerText =
-            strings.gameOverScore + ""; // Updated
-            enableArrowKeys();
+          
         }
 
-        // function disableArrowKeys() {
-        //   document.addEventListener("keydown", preventDefaultArrowKeys);
-        // }
-
-        // function enableArrowKeys() {
-        //   document.removeEventListener("keydown", preventDefaultArrowKeys);
-        // }
-
-        // function disableArrowKeys() {
-        // window.addEventListener("keydown", preventDefaultArrowKeys, { capture: true });
-        // }
-
-        //  function enableArrowKeys() {
-        //  window.removeEventListener("keydown", preventDefaultArrowKeys, { capture: true });
-        // }
-
-
-        // function preventDefaultArrowKeys(event) {
-        //   if (event.keyCode === 40) {
-        //     event.preventDefault();
-        //   }
-        // }
         function updateGameOverScore() {
           gameOverScore.innerText =
             strings.gameOverScore + "" + player.score; // Updated
