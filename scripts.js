@@ -329,8 +329,8 @@ document.addEventListener("DOMContentLoaded", () => {
           Rotate: "⇧ : Rotate",
           //   scoreTitle: "Score: ", // Updated
           gameOverTitle: "Game Over!",
-          gameOverScore: "Score: ",
-          playerNameDisplay: "Player: ",
+          // gameOverScore: "Score: ",
+          // playerNameDisplay: "Player: ",
         };
 
         const viStrings = {
@@ -342,8 +342,8 @@ document.addEventListener("DOMContentLoaded", () => {
           Rotate: "⇧ : Xoay",
           //   scoreTitle: "Điểm: ", // Updated
           gameOverTitle: "Kết thúc!",
-          gameOverScore: "Điểm: ",
-          playerNameDisplay: "Người chơi: ",
+          // gameOverScore: "Điểm: ",
+          // playerNameDisplay: "Người chơi: ",
         };
 
         const jaStrings = {
@@ -355,8 +355,8 @@ document.addEventListener("DOMContentLoaded", () => {
           Rotate: "⇧ : 回転",
           //   scoreTitle: "スコア: ", // Updated
           gameOverTitle: "終了！",
-          gameOverScore: "スコア: ",
-          playerNameDisplay: "プレーヤー: ",
+          // gameOverScore: "スコア: ",
+          // playerNameDisplay: "プレーヤー: ",
         };
 
         function switchLanguage(language) {
@@ -384,10 +384,10 @@ document.addEventListener("DOMContentLoaded", () => {
           //   document.getElementById("scoreTitle").innerText = strings.scoreTitle;
           document.getElementById("gameOverTitle").innerText =
             strings.gameOverTitle;
-          document.getElementById("gameOverScore").innerText =
-            strings.gameOverScore;
-          document.getElementById("playerNameDisplay").innerText =
-            strings.playerNameDisplay;
+          // document.getElementById("gameOverScore").innerText =
+          //   strings.gameOverScore;
+          // document.getElementById("playerNameDisplay").innerText =
+          //   strings.playerNameDisplay;
         }
 
         function switchToJapanese() {
