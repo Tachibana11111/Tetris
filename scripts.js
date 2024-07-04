@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         function updateScore() {
-          document.getElementById("score").innerText = player.score;
+          document.getElementById("scoreTilte").innerText = player.score;
         }
 
         document.addEventListener("keydown", (event) => {
@@ -327,7 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
           moveRight: "⇨ : Move right",
           IncrSPD: "⇩ : Increase falling speed",
           Rotate: "⇧ : Rotate",
-          //   scoreTitle: "Score: ", // Updated
+          scoreTitle: "Score: ", // Updated
           gameOverTitle: "Game Over!",
           gameOverScore: "Score: ",
           playerNameDisplay: "Player: ",
@@ -340,7 +340,7 @@ document.addEventListener("DOMContentLoaded", () => {
           moveRight: "⇨ : Di chuyển sang phải",
           IncrSPD: "⇩ : Tăng tốc độ rơi",
           Rotate: "⇧ : Xoay",
-          //   scoreTitle: "Điểm: ", // Updated
+          scoreTitle: "Điểm: ", // Updated
           gameOverTitle: "Kết thúc!",
           gameOverScore: "Điểm: ",
           playerNameDisplay: "Người chơi: ",
@@ -353,7 +353,7 @@ document.addEventListener("DOMContentLoaded", () => {
           moveRight: "⇨ : 右に移動",
           IncrSPD: "⇩ : 落下速度を上げる",
           Rotate: "⇧ : 回転",
-          //   scoreTitle: "スコア: ", // Updated
+          scoreTitle: "スコア: ", // Updated
           gameOverTitle: "終了！",
           gameOverScore: "スコア: ",
           playerNameDisplay: "プレーヤー: ",
@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", () => {
           document.getElementById("moveRight").innerText = strings.moveRight;
           document.getElementById("IncrSPD").innerText = strings.IncrSPD;
           document.getElementById("Rotate").innerText = strings.Rotate;
-          //   document.getElementById("scoreTitle").innerText = strings.scoreTitle;
+          document.getElementById("scoreTitle").innerText = strings.scoreTitle;
           document.getElementById("gameOverTitle").innerText =
             strings.gameOverTitle;
           document.getElementById("gameOverScore").innerText =
