@@ -437,13 +437,22 @@ document.addEventListener("DOMContentLoaded", () => {
             enableArrowKeys();
         }
 
+        // function disableArrowKeys() {
+        //   document.addEventListener("keydown", preventDefaultArrowKeys);
+        // }
+
+        // function enableArrowKeys() {
+        //   document.removeEventListener("keydown", preventDefaultArrowKeys);
+        // }
+
         function disableArrowKeys() {
-          document.addEventListener("keydown", preventDefaultArrowKeys);
+        window.addEventListener("keydown", preventDefaultArrowKeys, { capture: true });
         }
 
-        function enableArrowKeys() {
-          document.removeEventListener("keydown", preventDefaultArrowKeys);
+         function enableArrowKeys() {
+         window.removeEventListener("keydown", preventDefaultArrowKeys, { capture: true });
         }
+
 
         function preventDefaultArrowKeys(event) {
           if (event.key.startsWith("Arrow")) {
