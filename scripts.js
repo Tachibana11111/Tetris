@@ -359,9 +359,10 @@ document.addEventListener("DOMContentLoaded", () => {
           playerNameDisplay: "プレーヤー: ",
         };
 
+        let strings = enStrings;
+
         function switchLanguage(language) {
           currentLanguage = language;
-          let strings;
           switch (language) {
             case "vi":
               strings = viStrings;
@@ -424,7 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
           gameOverOverlay.style.display = "flex";
           updateGameOverScore();
           playerNameDisplay.innerText =
-            document.getElementById("playerNameDisplay").innerText +
+            strings.playerNameDisplay +
             " " +
             playerName; // Updated
             disableArrowKeys();
@@ -433,7 +434,7 @@ document.addEventListener("DOMContentLoaded", () => {
         function hideGameOverOverlay() {
           gameOverOverlay.style.display = "none";
           gameOverScore.innerText =
-            document.getElementById("gameOverScore").innerText + ""; // Updated
+            strings.gameOverScore + ""; // Updated
             enableArrowKeys();
         }
 
@@ -461,7 +462,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         function updateGameOverScore() {
           gameOverScore.innerText =
-            document.getElementById("gameOverScore").innerText + player.score; // Updated
+            strings.gameOverScore + "" + player.score; // Updated
         }
 
         function gameOver() {
