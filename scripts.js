@@ -455,7 +455,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         function preventDefaultArrowKeys(event) {
-          if (event.key.startsWith("Arrow")) {
+          if (event.keyCode === 40) {
             event.preventDefault();
           }
         }
