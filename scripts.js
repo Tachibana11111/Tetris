@@ -446,20 +446,20 @@ document.addEventListener("DOMContentLoaded", () => {
         //   document.removeEventListener("keydown", preventDefaultArrowKeys);
         // }
 
-        function disableArrowKeys() {
-        window.addEventListener("keydown", preventDefaultArrowKeys, { capture: true });
-        }
+        // function disableArrowKeys() {
+        // window.addEventListener("keydown", preventDefaultArrowKeys, { capture: true });
+        // }
 
-         function enableArrowKeys() {
-         window.removeEventListener("keydown", preventDefaultArrowKeys, { capture: true });
-        }
+        //  function enableArrowKeys() {
+        //  window.removeEventListener("keydown", preventDefaultArrowKeys, { capture: true });
+        // }
 
 
-        function preventDefaultArrowKeys(event) {
-          if (event.keyCode === 40) {
-            event.preventDefault();
-          }
-        }
+        // function preventDefaultArrowKeys(event) {
+        //   if (event.keyCode === 40) {
+        //     event.preventDefault();
+        //   }
+        // }
         function updateGameOverScore() {
           gameOverScore.innerText =
             strings.gameOverScore + "" + player.score; // Updated
@@ -476,6 +476,7 @@ document.addEventListener("DOMContentLoaded", () => {
           arenaColor = createMatrix(COLS, ROWS); // Reset lại bảng màu
           player.score = 0; // Reset điểm
           updateScore();
+          playerNameInput.value = "";
           startOverlay.style.display = "flex";
           gameRunning = true;
         });
