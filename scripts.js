@@ -375,7 +375,7 @@ document.addEventListener("DOMContentLoaded", () => {
           Rotate: "⇧ : 旋转",
           scoreTitle: "分数:", // Updated
           gameOverTitle: "游戏结束!",
-          gameOverScore: "分数: ",
+          gameOverScore: "分数 : ",
           playerNameDisplay: "玩家: ",
         };
 
