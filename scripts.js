@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
           vi: "Vui lòng nhập tên người chơi.",
           en: "Please enter your name.",
           ja: "お名前を入力してください。",
+          cn: "请输入你的名字",      
         };
 
         const ROWS = 20;
@@ -315,6 +316,8 @@ document.addEventListener("DOMContentLoaded", () => {
               switchToVietnamese();
               break;
             case "vi":
+              switchToChinese();
+            case "cn":
               switchToEnglish();
               break;
             default:
@@ -362,6 +365,19 @@ document.addEventListener("DOMContentLoaded", () => {
           playerNameDisplay: "プレーヤー: ",
         };
 
+        const cnStrings = {
+          howToPlay: "怎么玩 ：",
+          AInstruct: "使用箭头键移动拼图",
+          moveLeft: "⇦ : 向左移动",
+          moveRight: "⇨ : 向右移动",
+          IncrSPD: "⇩ : 增加下落速度",
+          Rotate: "⇧ : 旋转",
+          scoreTitle: "分数:", // Updated
+          gameOverTitle: "游戏结束!",
+          gameOverScore: "分数: ",
+          playerNameDisplay: "玩家: ",
+        };
+
         let strings = enStrings;
 
         function switchLanguage(language) {
@@ -372,6 +388,9 @@ document.addEventListener("DOMContentLoaded", () => {
               break;
             case "ja":
               strings = jaStrings;
+              break;
+            case "cn":
+              strings= cnStrings;
               break;
             default:
               strings = enStrings;
@@ -422,6 +441,16 @@ document.addEventListener("DOMContentLoaded", () => {
           document.getElementById("playAgainButton").innerText = "Restart";
           document.getElementById("quitButton").innerText = "Exit";
           switchLanguage("en");
+        }
+
+        function switchToChinese() {
+          document.title = "俄罗斯方块";
+          document.getElementById("startButton").innerText = "开始!";
+          document.getElementById("toggleLanguageButton").innerText =
+            "改变语言";
+          document.getElementById("playAgainButton").innerText = "重新开始";
+          document.getElementById("quitButton").innerText = "出口";
+          switchLanguage("cn");
         }
 
         function showGameOverOverlay() {
