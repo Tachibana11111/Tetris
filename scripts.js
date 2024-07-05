@@ -317,6 +317,7 @@ document.addEventListener("DOMContentLoaded", () => {
               break;
             case "vi":
               switchToChinese();
+              break;
             case "cn":
               switchToEnglish();
               break;
