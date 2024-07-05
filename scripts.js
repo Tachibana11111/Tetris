@@ -391,7 +391,7 @@ document.addEventListener("DOMContentLoaded", () => {
               strings = jaStrings;
               break;
             case "cn":
-              strings= cnStrings;
+              strings = cnStrings;
               break;
             default:
               strings = enStrings;
