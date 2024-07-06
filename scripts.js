@@ -369,7 +369,7 @@ document.addEventListener("DOMContentLoaded", () => {
     moveRight: "⇨ : 向右移动",
     IncrSPD: "⇩ : 增加下落速度",
     Rotate: "⇧ : 旋转",
-    scoreTitle: "分数:", // Updated
+    scoreTitle: "分数 : ", // Updated
     gameOverTitle: "游戏结束!",
     gameOverScore: "分数 : ",
     playerNameDisplay: "玩家: ",
