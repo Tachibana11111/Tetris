@@ -138,6 +138,20 @@ body {
         background-color: #218838; /* Darker green color on hover */
       }
 
+#returnButton {
+  padding: 10px 20px;
+  background-color: #bdb621;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#returnButton:hover {
+  background-color: #878007;
+}
+
       #gameOverOverlay {
         background: rgba(0, 0, 0, 0.8);
         position: fixed;
