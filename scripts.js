@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const gameOverOverlay = document.getElementById("gameOverOverlay");
   const playerNameDisplay = document.getElementById("playerNameDisplay");
   const playAgainButton = document.getElementById("playAgainButton");
-  const quitButton = document.getElementById("quitButton");
+  // const quitButton = document.getElementById("quitButton");
 
   let currentLanguage = "en";
 
@@ -414,7 +414,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("toggleLanguageButton").innerText =
       "言語を切り替える";
     document.getElementById("playAgainButton").innerText = "リスタート";
-    document.getElementById("quitButton").innerText = "出口";
+    // document.getElementById("quitButton").innerText = "出口";
     document.getElementById("returnButton").innerText = "ゲームハブ戻る ";
     switchLanguage("ja");
   }
@@ -425,7 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("toggleLanguageButton").innerText =
       "Chuyển ngôn ngữ";
     document.getElementById("playAgainButton").innerText = "Chơi lại";
-    document.getElementById("quitButton").innerText = "Thoát";
+    // document.getElementById("quitButton").innerText = "Thoát";
     document.getElementById("returnButton").innerText = "Quay lại GameHub";
     switchLanguage("vi");
   }
@@ -436,7 +436,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("toggleLanguageButton").innerText =
       "Change language";
     document.getElementById("playAgainButton").innerText = "Restart";
-    document.getElementById("quitButton").innerText = "Exit";
+    // document.getElementById("quitButton").innerText = "Exit";
     document.getElementById("returnButton").innerText = "Return GameHub";
     switchLanguage("en");
   }
@@ -446,7 +446,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("startButton").innerText = "开始!";
     document.getElementById("toggleLanguageButton").innerText = "改变语言";
     document.getElementById("playAgainButton").innerText = "重新开始";
-    document.getElementById("quitButton").innerText = "出口";
+    // document.getElementById("quitButton").innerText = "出口";
     document.getElementById("returnButton").innerText = "返回游戏汇";
     switchLanguage("cn");
   }
@@ -481,8 +481,8 @@ document.addEventListener("DOMContentLoaded", () => {
     gameRunning = true;
   });
 
-  quitButton.addEventListener("click", () => {
-    hideGameOverOverlay();
-    window.close(); // Đóng cửa sổ
-  });
+  // quitButton.addEventListener("click", () => {
+  //   hideGameOverOverlay();
+  //   window.close(); // Đóng cửa sổ
+  // });
 });
