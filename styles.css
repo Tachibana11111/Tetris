@@ -179,22 +179,19 @@ body {
 
       .buttons {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         width: 300px;
       }
 
-      #playAgainButton,
-      #quitButton {
+      #playAgainButton
+       {
         padding: 15px 30px;
         font-size: 18px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-      }
-
-      #playAgainButton {
         background-color: #007bff;
-        color: #fff;
+        color: #fff;       
       }
 
       #playAgainButton:hover {
