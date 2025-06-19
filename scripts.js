@@ -8,7 +8,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const gameOverOverlay = document.getElementById("gameOverOverlay");
   const playerNameDisplay = document.getElementById("playerNameDisplay");
   const playAgainButton = document.getElementById("playAgainButton");
-  // const quitButton = document.getElementById("quitButton");
+  const returnButton = document.getElementById('returnButton');
+
+  if (returnButton) {
+        returnButton.addEventListener('click', () => {
+           
+            if (window.parent !== window) {
+                window.parent.postMessage('closeGame', 'https://tachibana11111.github.io');
+            } else {
+                window.location.href = 'https://tachibana11111.github.io/GameHub';
+               
+            }
+        });
+    }
 
   let currentLanguage = "en";
 
