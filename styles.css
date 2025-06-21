@@ -198,4 +198,20 @@ body {
         background-color: #0056b3;
       }
 
+.github-link {
+    position: fixed;
+    bottom: 20px; 
+    left: 20px; 
+    font-size: 3em; 
+    color: #f8f8f2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    z-index: 1000; 
+}
+
+.github-link:hover {
+    color: #a7d9f7; 
+    transform: scale(1.1);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); 
+}
 
